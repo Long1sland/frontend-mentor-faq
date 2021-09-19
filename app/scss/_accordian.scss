@@ -1,0 +1,18 @@
+#accordian {
+  .accordian-question {
+    height: 48px;
+    width: 78%;
+    margin: 0px auto;
+    border-bottom: 1px solid $darkGreyishBlue;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+  }
+
+  .accordian-answer {
+    width: 78%;
+    margin: 0px auto;
+
+    line-height: 1.5rem;
+  }
+}
