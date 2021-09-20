@@ -22,3 +22,12 @@ body {
 .weight {
   font-weight: 700;
 }
+
+::-webkit-scrollbar {
+  width: 5px;
+
+  &-thumb {
+    background: rgb(189, 189, 189);
+    border-radius: 10px;
+  }
+}
