@@ -22,6 +22,10 @@ body {
   font-family: "Kumbh Sans", sans-serif;
 }
 
+.weight {
+  font-weight: 700;
+}
+
 #card {
   min-width: 325px;
   width: 325px;
@@ -45,6 +49,8 @@ body {
   margin-left: auto;
   margin-right: auto;
   margin-top: 135px;
+  height: 380px;
+  overflow: auto;
 }
 
 #faq > p {
@@ -54,25 +60,14 @@ body {
   margin-bottom: 22px;
 }
 
+#accordian img {
+  float: right;
+}
+
 #accordian .accordian-question {
-  height: 48px;
   width: 78%;
   margin: 0px auto;
   border-bottom: 1px solid #787887;
-  display: -webkit-box;
-  display: -ms-flexbox;
-  display: flex;
-  -webkit-box-pack: justify;
-      -ms-flex-pack: justify;
-          justify-content: space-between;
-  -webkit-box-align: center;
-      -ms-flex-align: center;
-          align-items: center;
-}
-
-#accordian .accordian-answer {
-  width: 78%;
-  margin: 0px auto;
-  line-height: 1.5rem;
+  padding: 16px 0px;
 }
 /*# sourceMappingURL=style.css.map */
