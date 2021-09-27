@@ -1,5 +1,4 @@
 #card {
-  min-width: 325px;
   width: 325px;
   background-color: white;
   height: 67%;
@@ -10,7 +9,7 @@
   transform: translate(-50%, -50%);
   border-radius: 25px;
 
-  & > img {
+  #mobile-woman {
     position: absolute;
     left: 15px;
     top: -107px;
