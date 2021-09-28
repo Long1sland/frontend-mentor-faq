@@ -38,38 +38,72 @@ body {
 @media only screen and (min-width: 812px) {
   #card {
     width: 78% !important;
+    max-width: 700px;
     height: 65% !important;
+    max-height: 424px !important;
     display: flex;
-    overflow: visible;
-    justify-content: space-between;
+    align-items: center;
+
+    #accordian {
+      height: 80% !important;
+    }
+  }
+
+  #desktop-box {
+    position: absolute;
+    top: 180px;
+    left: -57px;
+    width: 130px;
   }
 
   #faq {
     width: 300px;
-    margin-top: 0px !important;
-    margin-right: 0px !important;
+    margin: 0px auto !important;
+    height: 100% !important;
 
     & > span {
       margin-left: 30px !important;
       margin-right: 0px !important;
-      margin-bottom: 0px !important;
+      margin-bottom: 13px !important;
       margin-top: 10px !important;
     }
+  }
+
+  #faq-container {
+    flex-basis: 60%;
+    height: 70% !important;
+    margin: 0px !important;
   }
 
   #mobile-woman {
     display: none;
   }
+
   #desktop-woman {
-    width: 250px;
-    position: absolute;
-    top: 50%;
-    transform: translate(0, -50%);
+    width: 330px;
+    object-fit: cover;
+    object-position: -51px 0px;
+  }
+
+  #mobile-shadow {
+    display: none;
+  }
+
+  #desktop-shadow {
+    width: 40px;
   }
 }
 
 @media only screen and (max-width: 811px) {
   #desktop-woman {
+    display: none;
+  }
+
+  #desktop-box {
+    display: none;
+  }
+
+  #desktop-shadow {
     display: none;
   }
 }

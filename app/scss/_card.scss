@@ -3,6 +3,7 @@
   background-color: white;
   height: 67%;
   max-height: 535px;
+  min-height: 420px;
   position: absolute;
   top: 50%;
   left: 50%;
@@ -13,5 +14,11 @@
     position: absolute;
     left: 15px;
     top: -107px;
+  }
+
+  #mobile-shadow {
+    position: absolute;
+    left: 42px;
+    top: -4px;
   }
 }

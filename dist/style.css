@@ -44,40 +44,68 @@ body {
 @media only screen and (min-width: 812px) {
   #card {
     width: 78% !important;
+    max-width: 700px;
     height: 65% !important;
+    max-height: 424px !important;
     display: -webkit-box;
     display: -ms-flexbox;
     display: flex;
-    overflow: visible;
-    -webkit-box-pack: justify;
-        -ms-flex-pack: justify;
-            justify-content: space-between;
+    -webkit-box-align: center;
+        -ms-flex-align: center;
+            align-items: center;
+  }
+  #card #accordian {
+    height: 80% !important;
+  }
+  #desktop-box {
+    position: absolute;
+    top: 180px;
+    left: -57px;
+    width: 130px;
   }
   #faq {
     width: 300px;
-    margin-top: 0px !important;
-    margin-right: 0px !important;
+    margin: 0px auto !important;
+    height: 100% !important;
   }
   #faq > span {
     margin-left: 30px !important;
     margin-right: 0px !important;
-    margin-bottom: 0px !important;
+    margin-bottom: 13px !important;
     margin-top: 10px !important;
+  }
+  #faq-container {
+    -ms-flex-preferred-size: 60%;
+        flex-basis: 60%;
+    height: 70% !important;
+    margin: 0px !important;
   }
   #mobile-woman {
     display: none;
   }
   #desktop-woman {
-    width: 250px;
-    position: absolute;
-    top: 50%;
-    -webkit-transform: translate(0, -50%);
-            transform: translate(0, -50%);
+    width: 330px;
+    -o-object-fit: cover;
+       object-fit: cover;
+    -o-object-position: -51px 0px;
+       object-position: -51px 0px;
+  }
+  #mobile-shadow {
+    display: none;
+  }
+  #desktop-shadow {
+    width: 40px;
   }
 }
 
 @media only screen and (max-width: 811px) {
   #desktop-woman {
+    display: none;
+  }
+  #desktop-box {
+    display: none;
+  }
+  #desktop-shadow {
     display: none;
   }
 }
@@ -87,6 +115,7 @@ body {
   background-color: white;
   height: 67%;
   max-height: 535px;
+  min-height: 420px;
   position: absolute;
   top: 50%;
   left: 50%;
@@ -101,11 +130,16 @@ body {
   top: -107px;
 }
 
+#card #mobile-shadow {
+  position: absolute;
+  left: 42px;
+  top: -4px;
+}
+
 #faq {
   margin-left: auto;
   margin-right: auto;
-  margin-top: 33%;
-  height: 66%;
+  height: inherit;
 }
 
 #faq > span {
@@ -122,9 +156,14 @@ body {
   transition: all 0.5s;
 }
 
+#faq-container {
+  height: 87%;
+  margin-top: 40%;
+}
+
 #accordian {
   overflow: auto;
-  height: 92%;
+  height: 76%;
 }
 
 #accordian img {
